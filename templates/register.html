@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>
+            Welcome to add student Page
+        </h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="">Name</label>
+            <input type="text" placeholder="name" name="ename"><br><br>
+            <label for="">Mobile</label>
+            <input type="text" placeholder="pno" name="pno"><br><br>
+            <label for="">email</label>
+            <input type="text" placeholder="email" name="email"><br><br>
+            <label for="">address</label>
+            <input type="text" placeholder="address" name="add"><br><br>
+            <label for="">Gender</label>
+            <input type="text" placeholder="gender" name="gender"><br><br>
+            <label for="">User Name</label>
+            <input type="text" placeholder="Username" name="un"><br><br>
+            <label for="">Password</label>
+            <input type="text" placeholder="password" name="pw"><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </center>
+</body>
+</html>
